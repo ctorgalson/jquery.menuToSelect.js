@@ -1,10 +1,14 @@
 (function($){
   "use strict";
   /**
-   * jQuery plugin to convert a nested nav list to a select element with
-   * optgroup elements for the second-level subnav (if any). Stores URLs
-   * in option elements' value attributes, and jumps to those URLs on
-   * change event.
+   * jQuery plugin to convert a nested nav list with any number of levels
+   * to a select element with optgroup elements for the second-level subnav
+   * (if any). Subnav levels beyond two are not considered as the plugin is
+   * intended for use in circumstances (such as some mobile contexts) where
+   * a full navigation menu in a select element is overkill.
+   *
+   * Stores URLs in option elements' value attributes, and jumps to those
+   * URLs on change event.
    *
    * @param object overrides
    *    Provides configuration options for the resulting form:
