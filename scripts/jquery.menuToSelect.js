@@ -33,6 +33,8 @@
    *      String to pass jquery to create the option element. Will seldom,
    *      if ever, need alteration, but may be useful for adding classes
    *      or other attributes. Defaults to '<option/>'.
+   *
+   *  @version 1.0
    */
   $.fn.menuToSelect = function(overrides) {
     var defaults = {
